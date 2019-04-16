@@ -1,5 +1,7 @@
 package PTA1001;
 
+import java.util.Scanner;
+
 /*
 对任何一个正整数 n，如果它是偶数，那么把它砍掉一半；
 如果它是奇数，那么把 (3n+1) 砍掉一半。这样一直反复砍下去，最后一定在某一步得到 n=1。
@@ -26,7 +28,11 @@ public class Callatz01 {
     }
 
     public static void main(String[] args) {
-        System.out.print(getStep(5));
+
+        Scanner reader=new Scanner(System.in);
+        int input=reader.nextInt();
+        System.out.print(getStep(input));
     }
+
 
 }
